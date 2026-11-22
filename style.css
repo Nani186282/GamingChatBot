@@ -1,0 +1,570 @@
+/* 
+
+body {
+    margin: 0;
+    background-image: url("pubg_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+body > p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px black;
+}
+.info-container {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.info {
+    width: 100%;
+    min-width: 0;
+    height: 300px;
+    background-color: antiquewhite;
+    text-align: center;
+    align-content: center;
+    transition: transform .2s ease, box-shadow .2s ease;
+    box-sizing: border-box;
+}
+.cover{
+    height: 200px;
+    width:100%;
+    border-radius: 10%;  
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.feature1{
+    
+    background-image: url("weaponsImage.jpg");
+}
+.feature2{
+    background-image: url("mapsImage.jpg");
+}
+.feature3{
+    background-image: url("attachmentsImage.jpg");
+}
+.feature4{
+    background-image: url("vehicleImage.jpg");
+}
+.feature5{
+    background-image: url("gamePlayTips.jpg");
+}
+.feature6{
+    background-image: url("equipmentGuide.jpg");
+}
+.info {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.info:hover {
+    transform: translateY(-4px);
+    text-shadow: 2px 2px 4px #0008;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, .15);
+}
+
+
+.chat-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+.chat-container {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px black;
+    display: none;
+    flex-direction: column;
+}
+
+
+.chat-header {
+    text-align: center;
+    background-color: #17283a;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+
+.chat-body {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+
+.chat-body button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 8px 0;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.chat-body button:hover {
+    background-color: darkorange;
+}
+
+
+
+#chat-body p {
+    color: black;
+    background-color: #eeeeee;
+    border: none;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: left;
+    text-shadow: none;
+    font-size: 14px;
+}
+
+
+.chat-input {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+    margin: 0;
+}
+
+
+.send {
+    padding: 8px;
+    margin-left: 10px;
+    color: black;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+
+.send:hover {
+    background-color: darkorange;
+}
+#faq-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#chat-body p {
+    color: black;
+    background-color: #eeeeee;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: left;
+    text-shadow: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 20px;
+        padding: 20px 5px;
+    }
+
+    body > p {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .chat-container {
+        width: calc(100vw - 10px);
+        max-width: none;
+        right: 5px;
+        bottom: 75px;
+        height: 400px;
+        max-height: calc(100dvh - 90px);
+    }
+
+    .chat-icon {
+        width: 45px;
+        height: 45px;
+        right: 10px;
+        bottom: 10px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+
+    .chat-container {
+        height: calc(100dvh - 90px);
+        bottom: 75px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info-container {
+        width: 95%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    .info {
+        height: 280px;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("pubg_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    padding: 25px 10px;
+    color: #ffcc00;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Introduction paragraph */
+body > p {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 25px;
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* Feature cards heading */
+.section-title {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #ffcc00;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* Feature cards container */
+.info-container {
+    width: 85%;
+    margin: 25px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Individual feature card */
+.info {
+    width: 100%;
+    min-width: 0;
+    min-height: 300px;
+    padding: 15px;
+    background: rgba(20, 25, 20, 0.92);
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3);
+}
+
+.info h3 {
+    margin: 15px 0 10px;
+    color: #ffcc00;
+    font-size: 21px;
+}
+
+.info span {
+    display: block;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Feature card images */
+.cover {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Individual images */
+.feature1 {
+    background-image: url("weaponsImage.jpg");
+}
+
+.feature2 {
+    background-image: url("mapsImage.jpg");
+}
+
+.feature3 {
+    background-image: url("attachmentsImage.jpg");
+}
+
+.feature4 {
+    background-image: url("vehicleImage.jpg");
+}
+
+.feature5 {
+    background-image: url("gamePlayTips.jpg");
+}
+
+.feature6 {
+    background-image: url("equipmentGuide.jpg");
+}
+
+/* Floating chat icon */
+.chat-icon {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #ffcc00;
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.chat-icon:hover {
+    transform: scale(1.08);
+}
+
+/* Chat window */
+.chat-container {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    width: 350px;
+    height: 480px;
+    background: #202820;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+/* Chat header */
+.chat-header {
+    background: #ffcc00;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Chat body */
+.chat-body {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Welcome message */
+.welcome-message {
+    color: white;
+    background: #344334;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+/* FAQ section */
+#faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* FAQ buttons */
+.faq-btn {
+    padding: 9px;
+    background: #344334;
+    color: white;
+    border: 1px solid #ffcc00;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 13px;
+}
+
+.faq-btn:hover {
+    background: #526b42;
+}
+
+/* Chat messages */
+#chat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#chat-body p {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #344334;
+    color: white;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* Chat input area */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    background: #151b15;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    outline: none;
+}
+
+.chat-input input:focus {
+    border-color: #ffcc00;
+}
+
+/* Send button */
+.send {
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.send:hover {
+    background: #e6b800;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .info-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    .info {
+        min-height: 280px;
+    }
+
+    .chat-container {
+        width: calc(100% - 30px);
+        right: 15px;
+        bottom: 90px;
+        height: 70vh;
+    }
+
+    .chat-icon {
+        right: 15px;
+        bottom: 15px;
+    }
+}
