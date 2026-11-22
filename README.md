@@ -62,7 +62,7 @@ PUBG-Gaming-Assistant-Chatbot/
 1. Clone this repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/Nani186282/GamingChatBot.git
    ```
 
 2. Open the downloaded project folder.
