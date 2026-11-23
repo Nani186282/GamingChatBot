@@ -171,11 +171,13 @@ body > p {
 /* Chat body */
 .chat-body {
     flex: 1;
+    min-height: 0;
     padding: 12px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    scroll-behavior: smooth;
 }
 
 /* Welcome message */
@@ -208,13 +210,6 @@ body > p {
 
 .faq-btn:hover {
     background: #526b42;
-}
-
-/* Chat messages */
-#chat-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 #chat-body p {
