@@ -84,24 +84,87 @@
         <div class="chat-header">
             PUBG Gaming Assistant 🎮
         </div>
-        <div class="chat-body">
-            <p class="welcome-message">
-                Hello! Welcome to PUBG Gaming Assistant.
-                Ask me anything about weapons, maps, vehicles and gameplay!
-            </p>
-            <div id="faq-section">
-                <button class="faq-btn" data-question="What is PUBG?">
-                    What is PUBG?
-                </button>
-                <button class="faq-btn" data-question="Who developed PUBG?">
-                    Who developed PUBG?
-                </button>
-                <button class="faq-btn" data-question="What are PUBG maps?">
-                    What are PUBG maps?
-                </button>
-            </div>
-            <div id="chat-body"></div>
-        </div>
+        
+<div class="chat-body" id="chat-body">
+    <div id="welcome-screen">
+        <h2>Welcome to Gaming Chatbot 🎮</h2>
+        <p>How can I help you today?</p>
+    </div>
+    <!-- Main Menu -->
+    <div id="main-menu" class="menu-panel" hidden>
+        <p>What would you like to know today?</p>
+
+        <button class="menu-option" data-menu="weapons">🔫 Guns & Weapons</button>
+        <button class="menu-option" data-menu="maps">🗺️ Maps & Locations</button>
+        <button class="menu-option" data-menu="gamemodes">🎮 Game Modes</button>
+        <button class="menu-option" data-menu="tips">🏆 Tips & Strategies</button>
+        <button class="menu-option" data-menu="equipment">🎒 Equipment & Items</button>
+        <button class="menu-option" data-menu="help">❓ Help & FAQs</button>
+    </div>
+
+    <!-- Weapons Submenu -->
+    <div id="weapons-menu" class="menu-panel" hidden>
+        <p>What would you like to know about Guns & Weapons?</p>
+        <button class="menu-option">Assault Rifles</button>
+        <button class="menu-option">Sniper Rifles</button>
+        <button class="menu-option">Submachine Guns</button>
+        <button class="menu-option">Shotguns</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+
+    <!-- Maps Submenu -->
+    <div id="maps-menu" class="menu-panel" hidden>
+        <p>Which map would you like to know about?</p>
+        <button class="menu-option">Erangel</button>
+        <button class="menu-option">Miramar</button>
+        <button class="menu-option">Sanhok</button>
+        <button class="menu-option">Vikendi</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+
+    <!-- Game Modes Submenu -->
+    <div id="gamemodes-menu" class="menu-panel" hidden>
+        <p>Which game mode would you like to know about?</p>
+        <button class="menu-option">Classic Mode</button>
+        <button class="menu-option">Arena Mode</button>
+        <button class="menu-option">Team Deathmatch</button>
+        <button class="menu-option">Payload Mode</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+
+    <!-- Tips Submenu -->
+    <div id="tips-menu" class="menu-panel" hidden>
+        <p>What would you like to learn?</p>
+        <button class="menu-option">Landing Strategies</button>
+        <button class="menu-option">Survival Tips</button>
+        <button class="menu-option">Combat Strategies</button>
+        <button class="menu-option">Squad Strategies</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+
+    <!-- Equipment Submenu -->
+    <div id="equipment-menu" class="menu-panel" hidden>
+        <p>What would you like to know about?</p>
+        <button class="menu-option">Helmets</button>
+        <button class="menu-option">Vests</button>
+        <button class="menu-option">Backpacks</button>
+        <button class="menu-option">Healing Items</button>
+        <button class="menu-option">Weapon Attachments</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+
+    <!-- Help Submenu -->
+    <div id="help-menu" class="menu-panel" hidden>
+        <p>What do you need help with?</p>
+        <button class="menu-option">How to play PUBG Mobile?</button>
+        <button class="menu-option">How to improve my aim?</button>
+        <button class="menu-option">How to survive longer?</button>
+        <button class="menu-option">How to play with friends?</button>
+        <button class="menu-option">How to improve FPS?</button>
+        <button class="menu-option back-option">Back to Main Menu</button>
+    </div>
+</div>
+
         <div class="chat-input">
             <input id="message" type="text" placeholder="Type your question">
             <button id="send" class="send">Send</button>
