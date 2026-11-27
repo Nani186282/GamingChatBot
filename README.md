@@ -61,7 +61,3 @@ python app.py
 ## Note
 
 The Gemini API key must be stored securely in the `.env` file. Never upload it to GitHub.
-
-## Author
-
-Gaming Chatbot Project
